@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ {% include head.html %}
+ {% include header.html %}
+ {% include navigation.html %}
+  <div class="content">
+   <h2>{{ page.title }}</h2>
+   <span class="subtitle">Posted on {{ page.time_date }}</span>
+   <p>
+    {{ content }}
+   </p>
+  </div>
+ </body>
+ {% include footer.html %}
+ {% include javascript.html %}
+</html>

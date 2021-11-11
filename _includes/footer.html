@@ -1,0 +1,13 @@
+<div class="footer">
+ <img class="banner" src="{{ site.siteLogo | prepend: site.baseurl }}"/>
+ <p class="footer">
+  {{ site.creditsText }} {{ site.owner }}.
+   <br/>
+  <i>{{ site.misc }}</i>
+ </p>
+ <ul class="footer">
+  {% for link in site.data.footer %}
+   <li class="footer"><a class="nav" href="{{ link.url | prepend: site.baseurl }}">{{ link.name }}</a></li>
+  {% endfor %}
+ </ul>
+</div>

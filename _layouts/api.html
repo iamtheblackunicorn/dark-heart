@@ -1,0 +1,9 @@
+{
+{% for post in site.posts %}
+ {% if post == site.posts.last %}
+  "{{ post.title }}": ["{{ post.url | prepend: site.baseurl }}", "{{ post.description }}", "{{ post.time_date }}"]
+ {% else %}
+  "{{ post.title }}": ["{{ post.url | prepend: site.baseurl }}", "{{ post.description }}", "{{ post.time_date }}"],
+ {% endif %}
+{% endfor %}
+}

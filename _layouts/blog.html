@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ {% include head.html %}
+ {% include header.html %}
+ {% include navigation.html %}
+ {% for post in site.posts %}
+  {% if post.show == true %}
+   <div class="content">
+    <h2>{{ post.title }}</h2>
+    <span class="subtitle">Posted on {{ post.time_date }}</span>
+    <p>
+     {{ post.description }}
+    </p>
+    <hr class="divider"/>
+    <p>
+     <a class="read" href="{{ post.url | prepend: site.baseurl }}">{{ site.view_text }}</a>
+    </p>
+   </div>
+  {% else %}
+  {% endif %}
+ {% endfor %}
+ </body>
+ {% include footer.html %}
+ {% include javascript.html %}
+</html>

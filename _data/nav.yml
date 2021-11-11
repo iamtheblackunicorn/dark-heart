@@ -1,0 +1,4 @@
+- name: "HOME"
+  url: "/blog"
+- name: "ABOUT"
+  url: "/about"

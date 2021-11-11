@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+ {% include coverHead.html %}
+ <body>
+  <div class="cover">
+   <h1>{{ site.title }}</h1>
+    <p class="subtitle">{{ site.siteTitle }}</p>
+    <button class="read" onclick="window.location.href='{{ site.homeUrl | prepend: site.baseurl }}'">{{ site.enterSiteText }}</button>
+   </div>
+ </body>
+</html>

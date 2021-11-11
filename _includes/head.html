@@ -1,0 +1,49 @@
+<head>
+ {% include analytics.html %}
+ <meta name="description" content="{{ site.description | prepend: site.baseurl }}"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="theme-color" content="#ffffff">
+
+ {% if site.iconUrlIsAbsolute == true %}
+ <link rel="apple-touch-icon" sizes="57x57" href="{{ site.57x57 }}">
+ <link rel="apple-touch-icon" sizes="60x60" href="{{ site.60x60 }}">
+ <link rel="apple-touch-icon" sizes="72x72" href="{{ site.72x72 }}">
+ <link rel="apple-touch-icon" sizes="76x76" href="{{ site.76x76 }}">
+ <link rel="apple-touch-icon" sizes="114x114" href="{{ site.114x114 }}">
+ <link rel="apple-touch-icon" sizes="120x120" href="{{ site.120x120 }}">
+ <link rel="apple-touch-icon" sizes="144x144" href="{{ site.144x144 }}">
+ <link rel="apple-touch-icon" sizes="152x152" href="{{ site.152x152 }}">
+ <link rel="apple-touch-icon" sizes="180x180" href="{{ site.180x180 }}">
+ <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.192x192 }}">
+ <link rel="icon" type="image/png" sizes="32x32" href="{{ site.32x32 }}">
+ <link rel="icon" type="image/png" sizes="96x96" href="{{ site.96x96 }}">
+ <link rel="icon" type="image/png" sizes="16x16" href="{{ site.16x16 }}">
+ <meta name="msapplication-TileImage" content="{{ site.144x144 }}">
+ {% else %}
+ <link rel="apple-touch-icon" sizes="57x57" href="{{ site.57x57 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="60x60" href="{{ site.60x60 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="72x72" href="{{ site.72x72 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="76x76" href="{{ site.76x76 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="114x114" href="{{ site.114x114 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="120x120" href="{{ site.120x120 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="144x144" href="{{ site.144x144 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="152x152" href="{{ site.152x152 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="180x180" href="{{ site.180x180 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.192x192 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="32x32" href="{{ site.32x32 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="96x96" href="{{ site.96x96 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="16x16" href="{{ site.16x16 | prepend: site.baseurl }}">
+ <link rel="manifest" href="{{ site.manifest | prepend: site.baseurl }}">
+ <meta name="msapplication-TileImage" content="{{ site.144x144 | prepend: site.baseurl }}">
+ {% endif %}
+ 
+ <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}"/>
+ <link rel="preconnect" href="https://fonts.gstatic.com"/>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"/>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"/>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Source+Code+Pro:wght@200&display=swap"/>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <title>{{ site.title }}</title>
+ {% seo %}
+</head>

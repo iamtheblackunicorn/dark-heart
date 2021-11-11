@@ -1,0 +1,8 @@
+<div class="nav">
+ <a class="header" onclick="openNav();">{{ site.title }}</a>
+ <ul class="nav" id="navigation">
+   {% for link in site.data.nav %}
+    <li class="nav"><a class="nav" href="{{ link.url | prepend: site.baseurl }}">{{ link.name }}</a></li>
+   {% endfor %}
+ </ul>
+</div>
